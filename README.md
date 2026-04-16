@@ -4,12 +4,12 @@ In this lab, I go over how to configure Access Control Lists, and the main diffe
 
 Let's get started!
 
-When it comes to access-control, the main thing to implement on a network is an access-control list. This security method consists of two different types of access-control lists. Standard and Extended.
+When it comes to access-control, the main thing to implement on a network is an access-control list. This security method consists of two different types of access-control lists. Standard and Extended. Another thing to note is that an access control list show always be 
 
 
 **Standard Access-Control Lists**
 
-Standard access-control lists, when implemented block a specific device or nework from gaining any sort of access to a specific resource.
+Standard access-control lists, when implemented block a specific device or nework from gaining any sort of access to a specific resource. Rule of thumb for Standard Access-Control lists is to apply them as close to the **destination** as possible. Preferably, the interface that the destination is connected to.
 
 For example, I implented an access-control list that denies one specific ip address in a network rom gaining access to another network, while allowing every other to get access:
 
@@ -23,14 +23,15 @@ This pc was in a network that consisted of two different PCs. One was unable to 
 <img width="497" height="182" alt="image" src="https://github.com/user-attachments/assets/e7240ef0-9c36-4888-8bb3-1be7488f29f9" />
 
 
-See that is a good way to allow or block traffic. However, what if yo have a server that hosts multiple resources and you want to eny only one specific one while allowing allowing every other service to be accessible?
+See that is a good way to allow or block traffic. However, what if yo have a server that hosts multiple resources and you want to eny only one specific one while allowing every other service to be accessible?
 
-This is where Extended Access-Control lists come in!
+This is where Extended Access-Control lists come in! Rule of thumb for Extended Access-Control Lists is to apply them as close to the **source** as possible
 
 
 **Extended Access-Control Lists**
 
-An extended access-control list allows you to specify which port(s) and on which network you want to allow or deny for a specific ip address. This can be very useful if you want a server to not have access to a web page hosted on a server, but be able to access that server for a separate resource:
+An extended access-control list allows you to specify which port(s) and on which network you want to allow or deny for a specific ip address. This can be very useful if you want a server to not have access to a web page hosted on a server, but be able to access that server for a separate resource. In this example, I applied this access-control list to the interface thet 172.16.2.0 is connected to as I want the router to drop any HTTPS traffic inteded for the 192.168.2.100 server:
 
-<img width="640" height="125" alt="image" src="https://github.com/user-attachments/assets/90c7aafb-ecf8-47ad-9deb-9f4191bc7616" />
+<img width="631" height="126" alt="image" src="https://github.com/user-attachments/assets/2e7a98b0-0284-4683-a0b5-8f5ed827d87a" />
+
 
