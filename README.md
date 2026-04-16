@@ -20,6 +20,9 @@ This pc was in a network that consisted of two different PCs. One was unable to 
 <img width="505" height="175" alt="image" src="https://github.com/user-attachments/assets/74f0026a-8c87-4327-a6ce-0e1c30bf2ffb" />
 
 
+
+
+
 <img width="497" height="182" alt="image" src="https://github.com/user-attachments/assets/e7240ef0-9c36-4888-8bb3-1be7488f29f9" />
 
 
